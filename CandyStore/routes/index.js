@@ -1,8 +1,16 @@
-﻿
-/*
- * GET home page.
- */
+﻿var Routes = function(app) {
+    var self = this;
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+    app.get('/', function(req, res) {
+        res.render('index', { title: 'Express' });
+    });    
+
+
+    app.get('/users', function(req, res) {
+        res.send("respond with a resource");
+    });   
+
+    return self;
 };
+
+module.exports = Routes;
