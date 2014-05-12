@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 		
 		watch:{
 			sass:{
-				files:['../CandyStore/public/stylesheets/source/**/*.scss'],
+				files:['../CandyStore/public/css/source/**/*.scss'],
 				tasks: ['compass']
 			}
 		},
@@ -14,8 +14,8 @@ module.exports = function(grunt) {
 		compass: {
 		  sass: {
 			options: {
-				sassDir: '../CandyStore/public/stylesheets/source/',
-				cssDir: '../CandyStore/public/stylesheets/',
+				sassDir: '../CandyStore/public/css/source/',
+				cssDir: '../CandyStore/public/css/',
 				//environment: 'production',
 				//outputStyle: 'compressed'
 			}

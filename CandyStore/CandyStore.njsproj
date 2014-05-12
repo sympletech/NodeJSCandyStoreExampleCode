@@ -30,20 +30,57 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
-    <Compile Include="routes\index.js" />
-    <Compile Include="routes\user.js" />
+    <Compile Include="app.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
+    <Compile Include="routes\index.js">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Compile>
     <Content Include="package.json" />
-    <Content Include="public\stylesheets\style.styl" />
+    <Content Include="public\css\source\style.css">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Content>
+    <Content Include="public\css\source\style.min.css">
+      <Compile>True</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <IncludedFiles>
+      </IncludedFiles>
+    </Content>
+    <Content Include="public\css\source\style.scss">
+      <Compile>False</Compile>
+      <Minify>False</Minify>
+      <OutputFolder>
+      </OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
     <Content Include="README.md" />
-    <Content Include="views\index.jade" />
-    <Content Include="views\layout.jade" />
+    <Content Include="public\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
-    <Folder Include="public\images\" />
-    <Folder Include="public\javascripts\" />
-    <Folder Include="public\stylesheets\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\libs\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\css\source\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
   </ItemGroup>
