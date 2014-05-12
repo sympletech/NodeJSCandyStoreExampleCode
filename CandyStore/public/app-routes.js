@@ -1,4 +1,4 @@
 ﻿var appRoutes = [
-    { text: 'Home Page', title: 'SPA Starter', path: 'home' },
-    { text: 'Login Page', title: 'Login Page', path: 'login', templates: ['login-template'] }
+    { text: 'Candy Store Home', title: 'Node JS Candy Store', path: 'home', templates:[] },
+    { text: 'Candy Store Admin', title: 'Node JS Candy Store Admin', path: 'admin', templates:[] }
 ];
