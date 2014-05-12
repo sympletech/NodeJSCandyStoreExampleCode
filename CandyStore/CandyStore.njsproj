@@ -38,6 +38,39 @@
       <IncludedFiles>
       </IncludedFiles>
     </Compile>
+    <Compile Include="public\app-routes.js" />
+    <Compile Include="public\app\spa_core.js" />
+    <Compile Include="public\app\view-models\home-viewmodel.js" />
+    <Compile Include="public\app\view-models\login-viewmodel.js" />
+    <Compile Include="public\app\view-models\_globalViewModel.js" />
+    <Compile Include="public\lib\bootstrap\js\bootstrap.js" />
+    <Compile Include="public\lib\bootstrap\js\bootstrap.min.js" />
+    <Compile Include="public\lib\craydent-1.7.23.js" />
+    <Compile Include="public\lib\greensock\easing\EasePack.min.js" />
+    <Compile Include="public\lib\greensock\jquery.gsap.min.js" />
+    <Compile Include="public\lib\greensock\plugins\AttrPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\BezierPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\ColorPropsPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\CSSPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\CSSRulePlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\DirectionalRotationPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\EaselPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\KineticPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\RaphaelPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\RoundPropsPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\ScrollToPlugin.min.js" />
+    <Compile Include="public\lib\greensock\plugins\TextPlugin.min.js" />
+    <Compile Include="public\lib\greensock\TimelineLite.min.js" />
+    <Compile Include="public\lib\greensock\TimelineMax.min.js" />
+    <Compile Include="public\lib\greensock\TweenLite.min.js" />
+    <Compile Include="public\lib\greensock\TweenMax.min.js" />
+    <Compile Include="public\lib\jquery-1.11.0.min.js" />
+    <Compile Include="public\lib\jquery.cookie.js" />
+    <Compile Include="public\lib\knockout-3.1.0.js" />
+    <Compile Include="public\lib\knockout-view-model\knockout.viewmodel.js" />
+    <Compile Include="public\lib\knockout-view-model\knockout.viewmodel.min.js" />
+    <Compile Include="public\lib\q.js" />
+    <Compile Include="public\lib\underscore-min.js" />
     <Compile Include="routes\index.js">
       <Compile>True</Compile>
       <Minify>False</Minify>
@@ -47,22 +80,9 @@
       </IncludedFiles>
     </Compile>
     <Content Include="package.json" />
-    <Content Include="public\css\source\style.css">
-      <Compile>True</Compile>
-      <Minify>False</Minify>
-      <OutputFolder>
-      </OutputFolder>
-      <IncludedFiles>
-      </IncludedFiles>
-    </Content>
-    <Content Include="public\css\source\style.min.css">
-      <Compile>True</Compile>
-      <Minify>False</Minify>
-      <OutputFolder>
-      </OutputFolder>
-      <IncludedFiles>
-      </IncludedFiles>
-    </Content>
+    <Content Include="public\app\templates\login-template.html" />
+    <Content Include="public\app\views\home.html" />
+    <Content Include="public\app\views\login.html" />
     <Content Include="public\css\source\style.scss">
       <Compile>False</Compile>
       <Minify>False</Minify>
@@ -71,16 +91,38 @@
       <CompileStyle>Nested</CompileStyle>
       <DebugInfo>False</DebugInfo>
     </Content>
+    <Content Include="public\css\style.css" />
+    <Content Include="public\lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="public\lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="public\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="public\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\style.css" />
     <Content Include="README.md" />
     <Content Include="public\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
+    <Folder Include="public\app\" />
+    <Folder Include="public\app\templates\" />
+    <Folder Include="public\app\view-models\" />
+    <Folder Include="public\app\views\" />
     <Folder Include="public\img\" />
     <Folder Include="public\js\" />
-    <Folder Include="public\libs\" />
     <Folder Include="public\css\" />
     <Folder Include="public\css\source\" />
+    <Folder Include="public\lib\" />
+    <Folder Include="public\lib\bootstrap\" />
+    <Folder Include="public\lib\bootstrap\css\" />
+    <Folder Include="public\lib\bootstrap\fonts\" />
+    <Folder Include="public\lib\bootstrap\js\" />
+    <Folder Include="public\lib\greensock\" />
+    <Folder Include="public\lib\greensock\easing\" />
+    <Folder Include="public\lib\greensock\plugins\" />
+    <Folder Include="public\lib\knockout-view-model\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
   </ItemGroup>
