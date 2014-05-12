@@ -74,7 +74,7 @@
         var deferred = Q.defer();
 
         templateContainer.html("");
-        if (templates) {
+        if (templates.length > 0) {
             var promises = [];
             _.each(templates, function (template) {
                 promises.push(self.getTemplate(template));

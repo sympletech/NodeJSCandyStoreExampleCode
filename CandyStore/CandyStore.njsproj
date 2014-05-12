@@ -40,8 +40,8 @@
     </Compile>
     <Compile Include="public\app-routes.js" />
     <Compile Include="public\app\spa_core.js" />
+    <Compile Include="public\app\view-models\admin-viewModel.js" />
     <Compile Include="public\app\view-models\home-viewmodel.js" />
-    <Compile Include="public\app\view-models\login-viewmodel.js" />
     <Compile Include="public\app\view-models\_globalViewModel.js" />
     <Compile Include="public\lib\bootstrap\js\bootstrap.js" />
     <Compile Include="public\lib\bootstrap\js\bootstrap.min.js" />
@@ -81,8 +81,8 @@
     </Compile>
     <Content Include="package.json" />
     <Content Include="public\app\templates\login-template.html" />
+    <Content Include="public\app\views\admin.html" />
     <Content Include="public\app\views\home.html" />
-    <Content Include="public\app\views\login.html" />
     <Content Include="public\css\source\style.scss">
       <Compile>False</Compile>
       <Minify>False</Minify>
@@ -92,6 +92,7 @@
       <DebugInfo>False</DebugInfo>
     </Content>
     <Content Include="public\css\style.css" />
+    <Content Include="public\img\gumball-machine.jpg" />
     <Content Include="public\lib\bootstrap\css\bootstrap-theme.css" />
     <Content Include="public\lib\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="public\lib\bootstrap\css\bootstrap.css" />
@@ -124,7 +125,6 @@
     <Folder Include="public\lib\greensock\plugins\" />
     <Folder Include="public\lib\knockout-view-model\" />
     <Folder Include="routes\" />
-    <Folder Include="views\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
   <ProjectExtensions>
