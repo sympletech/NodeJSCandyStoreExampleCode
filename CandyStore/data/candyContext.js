@@ -1,13 +1,19 @@
 ﻿var CandyContext = function() {
-    var self = this;
+    var self = this,
+        mongoose = require('mongoose');
 
-    self.fakeData = [
-        { id: 1, name: 'Green Taffy', price: '0.50' },
-        { id: 2, name: 'Sour Balls', price: '0.75' },
-        { id: 3, name: 'Pixie Sticks', price: '1.50' },
-        { id: 4, name: 'Pez', price: '3.50' },
-        { id: 5, name: 'Black Licorice', price: '0.25' }
-    ];
+    mongoose.connection.on('error', function(err) {
+        console.log('Connection Error : ' + err);
+    });
+    mongoose.connect('mongodb://localhost/NodeCandyStore');
+
+    
+    self.candyModel = require('./models/candyModel');
+    self.createCandy = function(data) {
+        var newCandy = self.candyModel(data);
+        newCandy.save();
+    };
+
 
     return self;
 };
