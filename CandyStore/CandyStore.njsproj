@@ -38,6 +38,7 @@
       <IncludedFiles>
       </IncludedFiles>
     </Compile>
+    <Compile Include="data\candyContext.js" />
     <Compile Include="public\app-routes.js" />
     <Compile Include="public\app\spa_core.js" />
     <Compile Include="public\app\view-models\admin-viewModel.js" />
@@ -106,6 +107,7 @@
     <Content Include="public\index.html" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="data\" />
     <Folder Include="public\" />
     <Folder Include="public\app\" />
     <Folder Include="public\app\templates\" />
