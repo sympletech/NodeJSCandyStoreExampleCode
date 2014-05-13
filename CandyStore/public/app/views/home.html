@@ -35,7 +35,7 @@
                         </li>                        
                     </ul>
                     <label>Current Total : </label><b data-bind="html:cartTotal"></b>
-                    <button class="btn btn-primary pull-right">Checkout</button>
+                    <button data-bind="click:checkout" class="btn btn-primary pull-right">Checkout</button>
                 </div>
             </div>
 
@@ -43,3 +43,17 @@
     </div>
 </div>
 
+
+<div data-bind="template:{name : 'modal-template', data : modalData}"></div>
+
+<script id="checkout-template" type="text/html">
+    <h1>Thank You for Buying My Candy</h1>
+    <ul data-bind="foreach:cart">
+        <li>
+            <b data-bind="html:name"></b> |
+            $<span data-bind="html:price"></span>
+        </li>
+    </ul>
+    <label>Current Total : </label>
+    <b data-bind="html:cartTotal"></b>
+</script>

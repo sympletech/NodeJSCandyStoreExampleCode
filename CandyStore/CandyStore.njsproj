@@ -82,7 +82,7 @@
       </IncludedFiles>
     </Compile>
     <Content Include="package.json" />
-    <Content Include="public\app\templates\login-template.html" />
+    <Content Include="public\app\templates\modal-template.html" />
     <Content Include="public\app\views\admin.html" />
     <Content Include="public\app\views\home.html" />
     <Content Include="public\css\source\style.scss">

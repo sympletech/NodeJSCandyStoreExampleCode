@@ -21,7 +21,6 @@
             res.json(candies);
         });
     });
-    
 
 
     app.get('/users', function(req, res) {

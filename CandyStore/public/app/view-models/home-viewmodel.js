@@ -43,9 +43,20 @@
         return cartTotal;
     });
 
-    self.showCheckout = ko.observable(false);
+    
     self.checkout = function() {
-        self.showCheckout(true);
+        $('#myModal').modal('show');
+    };
+
+    //***************************************
+    //  Modal
+    //***************************************
+    self.modalData = {
+        modalId : "myModal",
+        modalTitle : ko.observable("Checkout Window"),
+        modalBodyTemplate : {name : 'checkout-template', data: self},
+        submit : function() {
+        }
     };
 
     return self;
