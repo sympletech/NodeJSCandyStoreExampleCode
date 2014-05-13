@@ -22,10 +22,17 @@
         });
     });
 
+    app.post('/api/checkout', function(req, res) {
+        var items = JSON.parse(req.body.items);
 
-    app.get('/users', function(req, res) {
-        res.send("respond with a resource");
-    });   
+        dataContext.createOrder({
+            timestamp : new Date(),
+            items : items
+        });
+
+        res.send("Order Saved");     
+    });
+  
 
     return self;
 };

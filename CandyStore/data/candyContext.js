@@ -13,6 +13,12 @@
         var newCandy = self.candyModel(data);
         newCandy.save();
     };
+    
+    self.orderModel = require('./models/orderModel');
+    self.createOrder = function(data) {
+        var newOrder = self.orderModel(data);
+        newOrder.save();
+    };
 
 
     return self;

@@ -56,6 +56,12 @@
         modalTitle : ko.observable("Checkout Window"),
         modalBodyTemplate : {name : 'checkout-template', data: self},
         submit : function() {
+            var cartItems = ko.viewmodel.toModel(self.cart);
+            
+            $.post('/api/checkout', { items: JSON.stringify(cartItems) }, function(data) {
+                $('#myModal').modal('hide');
+                self.cart([]);
+            });
         }
     };
 

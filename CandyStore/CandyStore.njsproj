@@ -40,6 +40,7 @@
     </Compile>
     <Compile Include="data\candyContext.js" />
     <Compile Include="data\models\candyModel.js" />
+    <Compile Include="data\models\orderModel.js" />
     <Compile Include="public\app-routes.js" />
     <Compile Include="public\app\spa_core.js" />
     <Compile Include="public\app\view-models\admin-viewModel.js" />
