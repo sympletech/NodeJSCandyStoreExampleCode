@@ -11,13 +11,12 @@
                     <h3 class="panel-title">Want Some Candy?</h3>
                 </div>
                 <div class="panel-body">
-                    <ul>
-                        <li>Candy Name | $0.50 | <a href="#">Add To Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Add To Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Add To Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Add To Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Add To Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Add To Cart</a></li>
+                    <ul data-bind="foreach:candyChoices">
+                        <li>
+                            <b data-bind="html:name"></b> |
+                            $<span data-bind="html:price"></span> |
+                            <a data-bind="click:$parent.addCandyToCart">Add To Cart</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -28,13 +27,14 @@
                     <h3 class="panel-title">Your Shopping Cart</h3>
                 </div>
                 <div class="panel-body">
-                    <ul>
-                        <li>Candy Name | $0.50 | <a href="#">Remove From Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Remove From Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Remove From Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Remove From Cart</a></li>
-                        <li>Candy Name | $0.50 | <a href="#">Remove From Cart</a></li>
+                    <ul data-bind="foreach:cart">
+                        <li>
+                            <b data-bind="html:name"></b> |
+                            $<span data-bind="html:price"></span> |
+                            <a data-bind="click:$parent.removeCandyFromCart">Remove From Cart</a>
+                        </li>                        
                     </ul>
+                    <label>Current Total : </label><b data-bind="html:cartTotal"></b>
                     <button class="btn btn-primary pull-right">Checkout</button>
                 </div>
             </div>
