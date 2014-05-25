@@ -1,0 +1,21 @@
+﻿body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.my-content {
+  padding: 25px;
+  margin: 10px;
+  border: solid 1px #c9c9c9;
+  width: 50%;
+  margin: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  .my-content h1 {
+    border-bottom: solid 1px #c9c9c9; }
+  .my-content p {
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
