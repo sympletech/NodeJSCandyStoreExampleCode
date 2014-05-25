@@ -47,22 +47,6 @@
       </IncludedFiles>
     </Compile>
     <Content Include="package.json" />
-    <Content Include="public\css\source\style.css">
-      <Compile>True</Compile>
-      <Minify>False</Minify>
-      <OutputFolder>
-      </OutputFolder>
-      <IncludedFiles>
-      </IncludedFiles>
-    </Content>
-    <Content Include="public\css\source\style.min.css">
-      <Compile>True</Compile>
-      <Minify>False</Minify>
-      <OutputFolder>
-      </OutputFolder>
-      <IncludedFiles>
-      </IncludedFiles>
-    </Content>
     <Content Include="public\css\source\style.scss">
       <Compile>False</Compile>
       <Minify>False</Minify>
@@ -71,6 +55,7 @@
       <CompileStyle>Nested</CompileStyle>
       <DebugInfo>False</DebugInfo>
     </Content>
+    <Content Include="public\css\style.css" />
     <Content Include="README.md" />
     <Content Include="public\index.html" />
   </ItemGroup>
