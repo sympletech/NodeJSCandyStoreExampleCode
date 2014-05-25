@@ -1,4 +1,30 @@
-﻿body {
+﻿@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+$border-color: #c9c9c9;
+
+body {
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.my-content{
+    padding:25px;
+    margin:10px;
+    border:solid 1px $border-color;
+    width:50%;
+    margin:auto;
+    @include border-radius(5px);
+
+    h1{
+        border-bottom:solid 1px $border-color;
+    }
+    p{
+        text-align:center;
+    }
 }
